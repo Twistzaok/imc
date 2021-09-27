@@ -24,7 +24,7 @@ function CalcularIMC () {
             IMCClasse = 'Obesidade III';
         }
 
-        Resultado.textContent = `${Nome}, seu resultado é: ${IMC}, sendo considerado: ${IMCClasse}`;
+        Resultado.textContent = `${Nome}, seu resultado é: ${IMC}, sendo considerado: ${IMCClasse}. Procure manter seu peso entre ${Math.round(18.5 * Altura).toFixed(2)} e ${Math.round(24.9 * Altura).toFixed(2)}`;
     }else {
         Resultado.textContent = 'Preencha todos os campos.';
     }
